@@ -28,3 +28,6 @@ function stop() {
     var element = document.getElementById("stop");
     element.classList.add("hidden");
 }
+
+
+//Generate a kitten

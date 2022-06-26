@@ -200,6 +200,29 @@ button:active {
     opacity: 100%;
 }
 
+.hit {
+    background: transparent url("./Images/Kittens/01.png") center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 100%;
+}
+
+.hit:hover {
+    background-color: transparent;
+    opacity: 100%;
+}
+
+.miss {
+    background-color: #E66789;
+    opacity: 40%;
+}
+
+.miss:hover {
+    background: none;
+    background-color: #E66789;
+    opacity: 40%;
+}
+
 /*Footer*/
 footer {
     color: white;
