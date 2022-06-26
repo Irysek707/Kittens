@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/158db90eaf.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- <header> with navigation -->
     <header>
         <nav class="navbar">
             <ul class = "navbar-nav">
@@ -21,47 +22,54 @@
                     <a href="https://pinkbean.dev/"><i class="fa-solid fa-house"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://github.com/Irysek707/Kittens"><i class="fa-solid fa-paw"></i></a>
+                    <i class="fa-solid fa-paw"></i> Where are my kittens? <i class="fa-solid fa-paw"></i>
                 </li>
                 <li class="nav-item">
-                    Where are my kittens?
-                </li>
-                <li class="nav-item">
-                    <a href="https://github.com/Irysek707"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-volume-high"></i>
-                </li>
-                <li class="nav-item hidden">
-                    <i class="fa-solid fa-volume-xmark"></i>
+                    <a href="https://github.com/Irysek707/Kittens"><i class="fa-brands fa-github"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
     
+    <!-- main section of the body -->
     <main>
         <section>
             <div class="rules">
             <img src="./Images/MOTIF TOKEN N°6 (11).png">
                 <div class="content"><h1>Where are my Kittens?</h1>
-                Kupa</div>
+                Ten kittens got lost in the city. Will you help finding them?
+                <ul>
+                    <li>There are total of 10 kittens hiding on the 7x7 board.</li>
+                    <li>Simply press the Find the kittens button to start a game.</li>
+                    <li>To uncover the field just click on it.</li>
+                    <li>Kittens hide in pairs, which means there will be another hiding next to the one you discover.</li>
+                    <li>The game ends when you find all kittens or if you uncover 10 empty fields.</li>
+                </ul></div>
             </div>
-            <div class="button"><button>Start</button></div>
+            <div class="button"><button id="button" value="PLAY" onClick="play()">Find the kittens</button>
+                <audio id="audio" src="./Sounds/Background.mp3"></audio>
+                <button onClick="stop()" id="stop" class="hidden">Stop the music</button>
+                <button onClick="play()" id="play" class="hidden">Play the music</button>
+            </div>
         </section>
 
-        <section class="maingame">
-            <div class="game">
+        <section class="maingame"> 
+            <div class="game hidden" id="game">
                 <table class="board">
-                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
-                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
-                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
-                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
+                    <tr><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td><td class="blur"></td></tr>
                 </table>
             </div>
         </section>
     </main>
 
-    <footer>Stopka</footer>
+    <!-- Footer with credits-->
+    <footer>© 2022 <a href="https://pinkbean.dev">Anna Podlasek</a>.<br/>Full credits available <a href="https://github.com/Irysek707/Kittens/blob/main/README.md">here</a>.</footer>
     
 </body>
 </html>
